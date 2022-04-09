@@ -13,11 +13,11 @@ export function Game(){
    
 
     function nextQ(){
-       if(selectedQuestion == Quiz[levelState].resposta){
+       if(selectedQuestion === Quiz[levelState].resposta){
            setgameScore(gameScore +1)
           
        }    
-       if(levelState == 2){
+       if(levelState === 2){
          setgameState("end")
        }
        else{
