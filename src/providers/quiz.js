@@ -22,7 +22,7 @@ export const Quiz =[
     },
 
     {
-        pergunta: "Qual tag é usada para mostrar uma imagem em uma pagina HTML?",
+        pergunta: "Qual tag é usada para mostrar umay imagem em uma pagina HTML?",
         A:"Src",
         B:"img",
         C:"image",
