@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
+/* Global config */
+html{
+   background: #1B3B6F;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+   margin:0;
+   padding: 0;   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-family: Arial, Helvetica, sans-serif;
+  
+   
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+/* MENU */
+
+.quiz-box{
+  color: white;
+  width:500px;
+  height:500px;
+  background:#1C7293 ;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  border-radius: 20px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.quiz-box h1{
+   padding-bottom: 15px;
+   color:white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quiz-box button{
+   cursor: pointer;
+   width: 200px;
+   height:50px;
+   border: none;
+   border-radius: 10px;
+
+   transition: all .2s ease-in-out; 
+
 }
+
+.quiz-box button:hover{
+  transform: scale(1.1);
+}
+
+
+/*  QUIZ  */
+
+.game-panel{
+   color: white;
+  width:500px;
+  height:500px;
+  background:#1C7293 ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+
+ 
+}
+
+.game-panel h1{
+ 
+   padding-left: 30px;
+   padding-bottom: 30px;
+
+}
+
+.game-panel button{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   width: 250px;
+   height:50px;
+   border: none;
+   border-radius: 10px;
+
+   margin-bottom: 10px;
+   
+}
+
+.game-panel .next-question button{
+   width: 200px;
+   height:50px;
+   border-radius: 5px;
+   transition: all .2s ease-in-out; 
+}
+
+.game-panel .next-question button:hover{
+   transform: scale(1.1);
+   
+}
+
+.game-panel button:focus{
+   background-color: #54cdd3;
+}
+
+.game-panel .next-question button:focus{
+   background-color: white;
+}
+
+
+/* End */
+
+.quiz-end 
+{
+   color: white;
+   width:500px;
+   height:500px;
+   background:#1C7293 ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   border-radius: 20px;
+}
+.quiz-end h1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color:white;
+   padding-bottom: 15px;
+}
+
+.quiz-end button{
+   cursor: pointer;
+   width: 200px;
+   height:50px;
+   border: none;
+   border-radius: 10px;
+
+   transition: all .2s ease-in-out; 
+}
+
+.quiz-end button:hover{
+   transform: scale(1.1);
+}
+
+.tempo{
+   color: white;
+   padding-bottom: 0px;
+   margin: 5px;
+}
+
+
+   
